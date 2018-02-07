@@ -24,7 +24,10 @@ $(document).ready(function() {
     $(".courseworkcontainer").hide()
     $(".commworkcontainer").hide()
     $(".locustcontainer").hide()
-    $(".idk").toggleClass("underline")
+    $(".idk").addClass("underline")
+    $('.idk2').removeClass("underline")
+    $('.idk3').removeClass("underline")
+    $('.idk4').removeClass("underline")
   })
 
   $(".coursework").click(function() {
@@ -32,7 +35,10 @@ $(document).ready(function() {
     $(".commworkcontainer").hide()
     $(".UIUXcontainer").hide()
     $(".locustcontainer").hide()
-    $(".idk2").toggleClass("underline")
+    $(".idk2").addClass("underline")
+    $('.idk').removeClass("underline")
+    $('.idk3').removeClass("underline")
+    $('.idk4').removeClass("underline")
   })
 
   $(".commwork").click(function() {
@@ -40,6 +46,10 @@ $(document).ready(function() {
     $(".courseworkcontainer").hide()
     $(".UIUXcontainer").hide()
     $(".locustcontainer").hide()
+    $(".idk3").addClass("underline")
+    $('.id2').removeClass("underline")
+    $('.idk').removeClass("underline")
+    $('.idk4').removeClass("underline")
   })
 
   $(".locust").click(function() {
@@ -47,6 +57,10 @@ $(document).ready(function() {
     $(".UIUXcontainer").hide()
     $(".courseworkcontainer").hide()
     $(".commworkcontainer").hide()
+    $(".idk4").addClass("underline")
+    $('.idk').removeClass("underline")
+    $('.idk2').removeClass("underline")
+    $('.idk3').removeClass("underline")
   })
 
 });
