@@ -19,6 +19,10 @@ $(document).ready(function() {
   })
 
 //sort design page view
+// $(".designbox").load(function() {
+//   $(".idk").addClass("underline");
+// });
+
   $(".UIUX").click(function() {
     $(".UIUXcontainer").show()
     $(".courseworkcontainer").hide()
@@ -47,7 +51,7 @@ $(document).ready(function() {
     $(".UIUXcontainer").hide()
     $(".locustcontainer").hide()
     $(".idk3").addClass("underline")
-    $('.id2').removeClass("underline")
+    $('.idk2').removeClass("underline")
     $('.idk').removeClass("underline")
     $('.idk4').removeClass("underline")
   })
