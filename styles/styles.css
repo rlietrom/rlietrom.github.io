@@ -302,6 +302,13 @@ a.h3link:hover {
   }
 } */
 
+.self {
+  position: fixed;
+  top: 55%;
+  left: 80%;
+  width: 225px;
+}
+
 .dog {
   position:absolute;
   width: 200px;
