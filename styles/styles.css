@@ -14,7 +14,11 @@ body {
   text-decoration: none;
 }
 
-p {
+.title:hover {
+
+}
+
+.para {
   color: blue;
    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
    -webkit-text-stroke-width: 1px;
