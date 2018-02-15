@@ -3,20 +3,22 @@ body {
   margin-left: 50px;
   margin-right: 50px;
 }
+
 .title {
-  /* margin-left: 100px; */
-  margin-top: 25px;
-  color: blue;
-  font-size: 80px;
-  /* -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  /* -webkit-text-stroke-width: 1px; */
-  font-family: DreamOrphansBdIt;
-  text-decoration: none;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  width: 400px;
 }
 
-.title:hover {
-
+.hoverTitle {
+  display: none;
 }
+
+h3 {
+  color
+}
+
+
 
 .para {
   color: blue;
@@ -260,7 +262,7 @@ a.h3link:hover {
 
 .buttonrow {
   display: table;
-  width: 45%; /*Optional*/
+  width: 50%; /*Optional*/
   table-layout: fixed; /*Optional*/
   /* border-spacing: 20px; /*Optional*/ */
 }
