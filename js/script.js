@@ -2,10 +2,10 @@
 $(document).ready(function() {
 
 //doggies animation
-  $(".dog").hover(function() {
+  $(".self").hover(function() {
       $(this).animate({
         height: "0%",
-        borderSpacing: -300
+        borderSpacing: -100
       },
       {step: function(now,fx) {
       $(this).css('transform','rotate('+now+'deg)');
@@ -16,6 +16,15 @@ $(document).ready(function() {
 
   $(".realWinston").hover(function() {
     $(".realWinston1").toggle()
+  })
+
+//Title hover
+  $(".title").mouseenter(function() {
+    $(".insideTitle").hide()
+    $(".hoverTitle").show()
+  }).mouseleave(function() {
+    $(".insideTitle").show()
+    $(".hoverTitle").hide()
   })
 
 //sort design page view
