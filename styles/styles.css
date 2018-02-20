@@ -14,13 +14,7 @@ body {
   display: none;
 }
 
-h3 {
-  color
-}
-
-
-
-.para {
+p {
   color: blue;
    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
    -webkit-text-stroke-width: 1px;
@@ -256,7 +250,7 @@ a.h3link:hover {
    /* font: inherit; */
    cursor: pointer;
    outline: inherit !important;
-   font: Helvetica bold;
+   font: Helvetica;
    font-size: 12pt;
 }
 
