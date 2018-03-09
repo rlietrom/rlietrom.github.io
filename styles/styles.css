@@ -8,10 +8,40 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
   width: 400px;
+
+}
+
+.inline {
+  display: inline-block;
 }
 
 .hoverTitle {
   display: none;
+}
+
+
+.brick {
+  position:absolute;
+  width: 50px;
+}
+
+.brick1 {
+  top: 140px;
+  left: 470px;
+}
+
+.brick2 {
+  top: 140px;
+  left: 420px;
+}
+
+.brick3 {
+  top: 115px;
+  left: 445px;
+}
+
+.brick:hover {
+  transform: rotate(0.01turn);
 }
 
 p {
@@ -331,4 +361,9 @@ a.h3link:hover {
 .img3 {
   top: 340px;
   left: 420px;
+}
+
+.olympusFrame {
+  border-color: blue;
+  border-width: 3px;
 }

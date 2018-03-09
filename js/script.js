@@ -14,9 +14,33 @@ $(document).ready(function() {
       },'linear');
   })
 
-  $(".realWinston").hover(function() {
-    $(".realWinston1").toggle()
+  $(".dog").hover(function() {
+      $(this).animate({
+        height: "0%",
+        borderSpacing: -100
+      },
+      {step: function(now,fx) {
+      $(this).css('transform','rotate('+now+'deg)');
+      },
+      duration:'medium'
+      },'linear');
   })
+
+  // $(".brick").click(function() {
+  //   $(this).animate({
+  //     height: "0%",
+  //     borderSpacing: -100
+  //   },
+  //   {step: function(now,fx) {
+  //   $(this).css('transform','rotate('+now+'deg)');
+  //   },
+  //   duration:'medium'
+  //   },'linear');
+  // })
+  //
+  // $(".realWinston").hover(function() {
+  //   $(".realWinston1").toggle()
+  // })
 
 //Title hover
   $(".title").mouseenter(function() {
