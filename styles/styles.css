@@ -1,7 +1,13 @@
+:root {
+    --background: white;
+    --accent: white;
+}
+
 
 body {
   margin-left: 50px;
   margin-right: 50px;
+  background-color: var(--background);
 }
 
 .title {
@@ -15,13 +21,11 @@ body {
 }
 
 p {
-  color: blue;
-   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  color: var(--accent);
+   -webkit-text-fill-color: var(--background); /* Will override color (regardless of order) */
    -webkit-text-stroke-width: 1px;
   font-size: 45px;
   font-family: GenBkBasI;
-  /* margin-left: 100px;
-  margin-right: 100px; */
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -33,43 +37,38 @@ p {
 }
 
 .mainlink {
-  color: blue;
-  /* text-decoration-color: blue !important; */
-  /* text-decoration: underline; */
-  border-bottom: 0.5px solid blue;
+  color: var(--accent);
+  border-bottom: 0.5px solid var(--accent);
   padding: none;
-  /* color: pink; */
-   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-fill-color: var(--background); /* Will override color (regardless of order) */
    -webkit-text-stroke-width: 1px;
-   margin-bottom: -10px;
  }
 
 .mainlink:hover {
-  color: blue;
-  -webkit-text-fill-color: blue;
-  text-decoration-color: blue !important;
+  color: var(--accent);
+  -webkit-text-fill-color: var(--accent);
+  text-decoration-color: var(--accent) !important;
   text-decoration: underline;
-  border-bottom: 0.5px solid white;
+  border: none;
 }
 
 
 .emailbutton {
-  color: blue;
-   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  color: var(--accent);
+   -webkit-text-fill-color: var(--background); /* Will override color (regardless of order) */
    -webkit-text-stroke-width: 1px;
   font-size: 45px;
   font-family: GenBkBasI;
   border: none;
-  background-color: none;
-  border-bottom: 0.5px solid blue;
+  background-color: var(--background);
+  border-bottom: 1px solid var(--accent);
 }
 
 .emailbutton:hover {
-  color: blue;
-  -webkit-text-fill-color: blue;
+  color: var(--accent);
+  -webkit-text-fill-color: var(--accent);
   text-decoration: underline;
-  border-bottom: 0.5px solid white;
-
+  border: none;
 }
 
 input {
@@ -78,7 +77,7 @@ input {
 
 /* DESIGN */
 h3 {
-  color: blue;
+  color: var(--accent);
   font-size: 12px;
   position: relative;
   width: 100%;
@@ -86,7 +85,7 @@ h3 {
 }
 
 .h3link {
-  color: blue;
+  color: var(--accent);
 }
 
 /* button.idk {
@@ -98,7 +97,7 @@ a.h3link:hover {
   -webkit-text-fill-color: black;
   text-decoration-color: black !important;
   text-decoration: underline;
-  /* border-bottom: 0.5px solid white; */
+  /* border-bottom: 0.5px solid var(--background); */
 }
 
 /* lol the things i do for horizontal scroll */
@@ -118,7 +117,7 @@ a.h3link:hover {
 #container2 {
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
-  white-space:nowrap;
+  var(--background)-space:nowrap;
   font-size:0;
   ::-webkit-scrollbar {
     display: none;
@@ -129,11 +128,11 @@ a.h3link:hover {
   display:inline-block;
   position:relative;
   bottom: 0px;
-  color: #FFF;
+  color: var(--background);
 }
 #container .box > div {
   font-size:96px;
-  color:#FFF;
+  color:var(--background);
   position:absolute;
   top:50%;
   /* left:20%; */

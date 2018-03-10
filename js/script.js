@@ -86,3 +86,25 @@ copyText.select();
 document.execCommand("Copy");
 alert("email address copied to clipboard: " + copyText.value);
 }
+
+//change css color variables on page load
+
+//{accent: "background"}
+var colorPairs = {
+  blue: "white",
+  black: "yellow",
+  lavenderBlush: "darkSlateGrey"
+}
+
+var backgroundPicker = function() {
+  var keys = Object.keys(colorPairs)
+  var pickedKey = keys.length * Math.random() << 0
+  var background = colorPairs [keys [pickedKey] ]
+  var accent = keys[pickedKey]
+  return [background, accent];
+}
+
+var pickedPair = backgroundPicker()
+
+document.documentElement.style.setProperty('--background', pickedPair[0]);
+document.documentElement.style.setProperty('--accent', pickedPair[1]);
