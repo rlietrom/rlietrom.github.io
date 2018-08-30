@@ -90,11 +90,11 @@ alert("email address copied to clipboard: " + copyText.value);
 //change css color variables on page load
 //{accent: "background"}
 var colorPairs = {
-  blue: "white",
-  black: "yellow",
-  lavenderBlush: "darkSlateGrey",
-  ghostWhite: "darkSlateBlue",
-  midnightBlue: "mistyRose"
+  blue: "white"
+  // black: "yellow",
+  // lavenderBlush: "darkSlateGrey",
+  // ghostWhite: "darkSlateBlue",
+  // midnightBlue: "mistyRose"
 }
 
 var backgroundPicker = function() {
