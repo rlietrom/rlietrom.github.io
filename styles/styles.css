@@ -112,6 +112,10 @@ a.h3link:hover {
   text-decoration: underline;
 }
 
+.h3center {
+  text-align: center;
+}
+
 /* project page */
 .header {
   top: 0;
@@ -160,21 +164,31 @@ a.h3link:hover {
   width: 60%;
 }
 
-
-
 .project {
   padding-bottom: 50px;
 }
 
+.project-section {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .project-separator {
   border-bottom: 2px solid var(--accent);
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .project-name {
   text-align: center;
   font-size: 70px;
-  padding-top: 25px;
-  margin-bottom: -45px;
+}
+
+.project-intro {
+  height: 20vh;
 }
 
 .project-div {
@@ -187,11 +201,16 @@ a.h3link:hover {
   display: grid;
 }
 
+.project-photo {
+  width: 60%;
+}
+
 .gif-box {
   border: 2px solid var(--accent);
   padding: 20px;
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 60%;
+    /* margin-left: 0%;
+    margin-right: 10%; */
 }
 
 .gif-box-mobile {
