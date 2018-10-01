@@ -16,8 +16,7 @@ $(document).ready(function() {
 $(window).scroll(function() {
   $('.scroll-animations .animated').each(function() {
     if (isScrolledIntoView(this) === true) {
-      console.log('this', this);
-      $(this).addClass('pulse');
+      $(this).addClass('fadeInDown');
     }
   });
 });
