@@ -52,50 +52,6 @@ $(window).scroll(function() {
 //   $(".idk").addClass("underline");
 // });
 
-  $(".UIUX").click(function() {
-    $(".UIUXcontainer").show()
-    $(".courseworkcontainer").hide()
-    $(".commworkcontainer").hide()
-    $(".locustcontainer").hide()
-    $(".idk").addClass("underline")
-    $('.idk2').removeClass("underline")
-    $('.idk3').removeClass("underline")
-    $('.idk4').removeClass("underline")
-  })
-
-  $(".coursework").click(function() {
-    $(".courseworkcontainer").show()
-    $(".commworkcontainer").hide()
-    $(".UIUXcontainer").hide()
-    $(".locustcontainer").hide()
-    $(".idk2").addClass("underline")
-    $('.idk').removeClass("underline")
-    $('.idk3').removeClass("underline")
-    $('.idk4').removeClass("underline")
-  })
-
-  $(".commwork").click(function() {
-    $(".commworkcontainer").show()
-    $(".courseworkcontainer").hide()
-    $(".UIUXcontainer").hide()
-    $(".locustcontainer").hide()
-    $(".idk3").addClass("underline")
-    $('.idk2').removeClass("underline")
-    $('.idk').removeClass("underline")
-    $('.idk4').removeClass("underline")
-  })
-
-  $(".locust").click(function() {
-    $(".locustcontainer").show()
-    $(".UIUXcontainer").hide()
-    $(".courseworkcontainer").hide()
-    $(".commworkcontainer").hide()
-    $(".idk4").addClass("underline")
-    $('.idk').removeClass("underline")
-    $('.idk2').removeClass("underline")
-    $('.idk3').removeClass("underline")
-  })
-
 });
 
 
@@ -153,4 +109,76 @@ title.onmouseleave = function() {
   for(var i = 0; i < classTwoCollection.length; i++) {
     classTwoCollection[i].style.fill = pickedPair[1];
   }
+}
+
+var booklink = document.getElementById("booklink");
+var previewbook = document.getElementById("previewbook")
+booklink.onmouseover = function() {
+  previewbook.style.opacity = "1";
+}
+booklink.onmouseleave = function() {
+  previewbook.style.opacity = "0";
+}
+
+var portfoliolink = document.getElementById("portfoliolink");
+var previewportfolio = document.getElementById("previewportfolio")
+portfoliolink.onmouseover = function() {
+  previewportfolio.style.opacity = "1";
+}
+portfoliolink.onmouseleave = function() {
+  previewportfolio.style.opacity = "0";
+}
+
+var githublink = document.getElementById("githublink");
+var previewgithub = document.getElementById("previewgithub")
+githublink.onmouseover = function() {
+  previewgithub.style.opacity = "1";
+}
+githublink.onmouseleave = function() {
+  previewgithub.style.opacity = "0";
+}
+
+var blackrocklink = document.getElementById("blackrocklink");
+var previewblackrock = document.getElementById("previewblackrock")
+blackrocklink.onmouseover = function() {
+  previewblackrock.style.opacity = "1";
+}
+blackrocklink.onmouseleave = function() {
+  previewblackrock.style.opacity = "0";
+}
+
+var shleeplink = document.getElementById("shleeplink");
+var previewshleep = document.getElementById("previewshleep")
+shleeplink.onmouseover = function() {
+  previewshleep.style.opacity = "1";
+}
+shleeplink.onmouseleave = function() {
+  previewshleep.style.opacity = "0";
+}
+
+var cvlink = document.getElementById("cvlink");
+var previewcv = document.getElementById("previewcv")
+cvlink.onmouseover = function() {
+  previewcv.style.opacity = "1";
+}
+cvlink.onmouseleave = function() {
+  previewcv.style.opacity = "0";
+}
+
+var linkedinlink = document.getElementById("linkedinlink");
+var previewlinkedin = document.getElementById("previewlinkedin")
+linkedinlink.onmouseover = function() {
+  previewlinkedin.style.opacity = "1";
+}
+linkedinlink.onmouseleave = function() {
+  previewlinkedin.style.opacity = "0";
+}
+
+var mediumlink = document.getElementById("mediumlink");
+var previewmedium = document.getElementById("previewmedium")
+mediumlink.onmouseover = function() {
+  previewmedium.style.opacity = "1";
+}
+mediumlink.onmouseleave = function() {
+  previewmedium.style.opacity = "0";
 }

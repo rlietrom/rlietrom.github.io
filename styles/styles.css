@@ -230,7 +230,45 @@ a.h3link:hover {
   width: 100%;
 }
 
+.previewimage {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  max-width: 200px;
+  max-height: 200px;
+}
 
+#previewbook {
+  opacity: 0;
+}
+
+#previewportfolio {
+  opacity: 0;
+}
+
+#previewgithub {
+  opacity: 0;
+}
+
+#previewblackrock {
+  opacity: 0;
+}
+
+#previewshleep {
+  opacity: 0;
+}
+
+#previewcv {
+  opacity: 0;
+}
+
+#previewlinkedin {
+  opacity: 0;
+}
+
+#previewmedium {
+  opacity: 0;
+}
 
 /* .self {
   position: fixed;
