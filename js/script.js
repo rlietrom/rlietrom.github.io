@@ -182,3 +182,12 @@ mediumlink.onmouseover = function() {
 mediumlink.onmouseleave = function() {
   previewmedium.style.opacity = "0";
 }
+
+var photoslink = document.getElementById("photoslink");
+var previewphotos = document.getElementById("previewphotos")
+photoslink.onmouseover = function() {
+  previewphotos.style.opacity = "1";
+}
+photoslink.onmouseleave = function() {
+  previewphotos.style.opacity = "0";
+}

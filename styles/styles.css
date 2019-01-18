@@ -270,6 +270,18 @@ a.h3link:hover {
   opacity: 0;
 }
 
+#previewphotos {
+  opacity: 0;
+}
+
+.photo {
+  width: 50%;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  left: 25%;
+}
+
 /* .self {
   position: fixed;
   top: 55%;
