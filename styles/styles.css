@@ -1,117 +1,345 @@
+:root {
+  --background: white;
+  --accent: pink;
+}
+
+/* fonts */
+@font-face {
+  font-family: "DreamOrphansBdIt";
+  src: url('./fonts/dreamorphansbd.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "GenBkBasI";
+  src: url('./fonts/GenBkBasI.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Paduak";
+  src: url('./fonts/PadaukRegular.ttf') format('truetype');
+}
 
 body {
-  margin-left: 25px;
+  /* margin-left: 50px;
+  margin-right: 50px; */
+  background-color: var(--background);
+  cursor: url('path-to-image.png'), auto;
 }
-.title {
-  /* margin-left: 100px; */
-  margin-top: 25px;
-  color: blue;
-  font-size: 80px;
-  /* -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  /* -webkit-text-stroke-width: 1px; */
-  font-family: DreamOrphansBdIt;
-  text-decoration: none;
+
+.wrapper {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 p {
-  color: blue;
-   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  color: var(--accent);
+   -webkit-text-fill-color: var(--background); /* Will override color (regardless of order) */
    -webkit-text-stroke-width: 1px;
   font-size: 45px;
   font-family: GenBkBasI;
-  /* margin-left: 100px;
-  margin-right: 100px; */
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.realWinston1 {
-  display:none;
+h3 {
+  color: var(--accent);
+  font-size: 15px;
   position: relative;
-  max-width: 100px;
-}
-
-.mainlink {
-  color: blue;
-  /* text-decoration-color: blue !important; */
-  /* text-decoration: underline; */
-  border-bottom: 0.5px solid blue;
-  padding: none;
-  /* color: pink; */
-   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 1px;
-   margin-bottom: -10px;
- }
-
-.mainlink:hover {
-  color: blue;
-  -webkit-text-fill-color: blue;
-  text-decoration-color: blue !important;
-  text-decoration: underline;
-  border-bottom: 0.5px solid white;
-}
-
-
-.emailbutton {
-  color: blue;
-   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 1px;
-  font-size: 45px;
-  font-family: GenBkBasI;
-  border: none;
-  background-color: none;
-  border-bottom: 0.5px solid blue;
-}
-
-.emailbutton:hover {
-  color: black;
-  -webkit-text-fill-color: black;
-  text-decoration: underline;
-  border-bottom: 0.5px solid white;
-
+  width: 100%;
+  font-family: Padauk;
 }
 
 input {
   display: none;
 }
 
-/* DESIGN */
-h3 {
-  color: blue;
-  font-size: 12px;
-  position: relative;
-  width: 100%;
-  font-family: Helvetica;
+.title {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  width: 400px;
+}
+
+.titleDesignPage {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 300px;
+  margin-left: 50px;
+}
+
+.mainlink {
+  color: var(--accent);
+  border-bottom: 0.5px solid var(--accent);
+  padding: none;
+   -webkit-text-fill-color: var(--background);
+   -webkit-text-stroke-width: 1px;
+   margin-bottom: -10px;
+ }
+
+.mainlink:hover {
+  color: var(--accent);
+  -webkit-text-fill-color: var(--accent);
+  text-decoration-color: var(--accent) !important;
+  text-decoration: underline;
+  border-bottom: 0.5px solid var(--background);
+}
+
+.emailbutton {
+  color: var(--accent);
+   -webkit-text-fill-color: var(--background);
+   -webkit-text-stroke-width: 1px;
+  font-size: 45px;
+  font-family: GenBkBasI;
+  border: none;
+  background-color: var(--background);
+  border-bottom: 0.5px solid var(--accent);
+}
+
+.emailbutton:hover {
+  color: var(--accent);
+  -webkit-text-fill-color: var(--accent);
+  text-decoration: underline;
+  border-bottom: 0.5px solid var(--background);
 }
 
 .h3link {
-  color: blue;
+  color: var(--accent);
 }
 
 a.h3link:hover {
-  color: black;
-  -webkit-text-fill-color: black;
-  text-decoration-color: black !important;
+  color: red;
+  -webkit-text-fill-color: red;
+  text-decoration-color: red !important;
   text-decoration: underline;
-  /* border-bottom: 0.5px solid white; */
 }
 
+.h3center {
+  text-align: center;
+}
+
+/* project page */
+.header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  height: auto;
+  background-color: var(--background);
+  border-bottom: 2px solid var(--accent);
+  z-index: 15;
+}
+
+.footer {
+
+}
+
+.col-3 {
+  flex-grow: 1;
+  max-width: 33.333334%;
+  display: flex;
+}
+
+.col-4 {
+  flex-grow: 1;
+  max-width: 25%;
+  display: flex;
+}
+
+.col-3 > h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0px;
+  align-self: flex-end;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.col {
+  flex-grow: 1;
+  max-width: 50%;
+}
+
+.col > img {
+  width: 60%;
+}
+
+.project {
+  padding-bottom: 50px;
+}
+
+.project-section {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-separator {
+  border-bottom: 2px solid var(--accent);
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.project-name {
+  text-align: center;
+  font-size: 70px;
+}
+
+.project-intro {
+  height: 5vh;
+}
+
+.project-div {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.project-grid {
+  display: grid;
+}
+
+.project-photo {
+  width: 60%;
+}
+
+.gif-box {
+  border: 2px solid var(--accent);
+  padding: 20px;
+  width: 60%;
+    /* margin-left: 0%;
+    margin-right: 10%; */
+}
+
+.gif-box-mobile {
+  border: 2px solid var(--accent);
+  padding: 20px;
+  width: 40%;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.gif-box > img {
+  width: 100%;
+}
+
+.gif-box-mobile > img {
+  width: 100%;
+}
+
+.previewimage {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#previewbook {
+  opacity: 0;
+}
+
+#previewportfolio {
+  opacity: 0;
+}
+
+#previewgithub {
+  opacity: 0;
+}
+
+#previewblackrock {
+  opacity: 0;
+}
+
+#previewshleep {
+  opacity: 0;
+}
+
+#previewcv {
+  opacity: 0;
+}
+
+#previewlinkedin {
+  opacity: 0;
+}
+
+#previewmedium {
+  opacity: 0;
+}
+
+#previewphotos {
+  opacity: 0;
+}
+
+.photo {
+  width: 50%;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  left: 25%;
+}
+
+/* .self {
+  position: fixed;
+  top: 55%;
+  left: 80%;
+  width: 225px;
+}
+
+.dog {
+  position:absolute;
+  width: 200px;
+}
+
+.dog:hover {
+  transform: rotate(0.01turn);
+}
+
+.img1 {
+  top: 0px;
+  left:720px;
+}
+
+.img2 {
+  top: 200px;
+  left:220px;
+}
+
+.img3 {
+  top: 340px;
+  left: 420px;
+} */
+
+/* .realWinston1 {
+  display:none;
+  position: relative;
+  max-width: 100px;
+} */
+
 /* lol the things i do for horizontal scroll */
-#container {
+/* #container {
   overflow-y:scroll;
   overflow-x:hidden;
   transform: rotate(270deg) translateX(-100%);
   transform-origin: top left;
-  /* background-color:#999; */
   position:absolute;
   width: 70vh;
   height: 100vw;
+  -webkit-scrollbar {
+    display: none;
+  }
 }
 #container2 {
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   white-space:nowrap;
   font-size:0;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 #container .box {
@@ -125,7 +353,6 @@ a.h3link:hover {
   color:#FFF;
   position:absolute;
   top:50%;
-  /* left:20%; */
   margin:-50px 0 0 -50px;
   line-height:1;
 }
@@ -229,25 +456,23 @@ a.h3link:hover {
 #container .big > div {
   width:690px;
   height:140px;
-}
+} */
 
-.designbutton {
+/* .designbutton {
   background: none !important;
    color: inherit;
    border: none;
    padding: 0! important;
-   /* font: inherit; */
    cursor: pointer;
    outline: inherit !important;
-   font: Helvetica bold;
+   font: Padauk;
    font-size: 12pt;
-}
+} */
 
-.buttonrow {
+/* .buttonrow {
   display: table;
-  width: 45%; /*Optional*/
-  table-layout: fixed; /*Optional*/
-  /* border-spacing: 20px; /*Optional*/ */
+  width: 50%;
+  table-layout: fixed;
 }
 
 .buttoncol {
@@ -268,20 +493,7 @@ a.h3link:hover {
 
 .locustcontainer {
   display: none;
-}
-
-
-/* fonts */
-
-@font-face {
-  font-family: "DreamOrphansBdIt";
-  src: url('./fonts/dreamorphansbd.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: "GenBkBasI";
-  src: url('./fonts/GenBkBasI.ttf') format('truetype');
-}
+} */
 
 /* @media (max-width:600px) {
   p {
@@ -290,27 +502,3 @@ a.h3link:hover {
     margin: 5px;
   }
 } */
-
-.dog {
-  position:absolute;
-  width: 200px;
-}
-
-.dog:hover {
-  transform: rotate(0.01turn);
-}
-
-.img1 {
-  top: 0px;
-  left:720px;
-}
-
-.img2 {
-  top: 200px;
-  left:220px;
-}
-
-.img3 {
-  top: 340px;
-  left: 420px;
-}
