@@ -114,10 +114,10 @@ title.onmouseleave = function() {
 var booklink = document.getElementById("booklink");
 var previewbook = document.getElementById("previewbook")
 booklink.onmouseover = function() {
-  previewbook.style.opacity = "1";
+  previewbook.style.opacity = "0";
 }
 booklink.onmouseleave = function() {
-  previewbook.style.opacity = "0";
+  previewbook.style.opacity = "1";
 }
 
 var portfoliolink = document.getElementById("portfoliolink");
