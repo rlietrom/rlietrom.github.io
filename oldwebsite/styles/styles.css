@@ -150,6 +150,19 @@ a.h3link:hover {
   align-self: flex-end;
 }
 
+.col-milestone-thick {
+  flex-grow: 1;
+  max-width: 48%;
+  display: flex;
+}
+
+.col-milestone-thin {
+  flex-grow: 1;
+  max-width: 4%;
+  display: flex;
+  border-right: 2px solid var(--accent);
+}
+
 .row {
   display: flex;
   width: 100%;

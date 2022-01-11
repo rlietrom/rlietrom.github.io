@@ -60,7 +60,8 @@ function myFunction() {
 var copyText = document.getElementById("myInput");
 copyText.select();
 document.execCommand("Copy");
-alert("email address copied to clipboard: " + copyText.value);
+console.log();
+alert("My email address, rlietrom@gmail.com, is copied to your clipboard ~" + copyText.value);
 }
 
 //change css color variables on page load
@@ -100,7 +101,7 @@ for(var i = 0; i < classTwoCollection.length; i++) {
 //on hover, show RLIETROM
 var title = document.getElementById("Layer_1");
 title.onmouseover = function() {
-  console.log('here');
+  console.log('getElementById("Layer_1")');
   for(var i = 0; i < classTwoCollection.length; i++) {
     classTwoCollection[i].style.fill = "orangeRed";
   }
@@ -141,6 +142,7 @@ githublink.onmouseleave = function() {
 var pianolink = document.getElementById("pianolink");
 var previewpiano = document.getElementById("previewpiano")
 pianolink.onmouseover = function() {
+  console.console.log("previewpiano");
   previewpiano.style.opacity = "1";
 }
 pianolink.onmouseleave = function() {

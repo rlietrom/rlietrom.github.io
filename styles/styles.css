@@ -1,6 +1,6 @@
 :root {
   --background: white;
-  --accent: pink;
+  --accent: green;
 }
 
 /* fonts */
@@ -278,12 +278,18 @@ a.h3link:hover {
   opacity: 0;
 }
 
-.photo {
+.soul {
   width: 50%;
   position: relative;
   margin-top: 50px;
   margin-bottom: 50px;
   left: 25%;
+  height: auto;
+}
+
+.soul-video {
+  width: 100%;
+  height: 100%;
 }
 
 /* .self {
